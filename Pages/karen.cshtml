@@ -1,7 +1,9 @@
 ﻿@page "/karen"
 @model IBAS_menu.Pages.karenModel
-@{<div>
-     <table>
+@{
+    
+    <div>
+     <table id="customers">
   <tr class="border_bottom">
     <th>Karen info</th>
     <th>email</th>
@@ -19,5 +21,33 @@
   </tr>
 </table> 
 </div>
+<div>
+<img src="/karenpics/karen1.jpg">
+<img src="/karenpics/karen2.webp">
+</div>
 
 }
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
